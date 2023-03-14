@@ -10,7 +10,7 @@ const path = require('path')
 const fs = require('fs')
 module.exports = {
     devServer: {
-        port: "8888",
+        port: "9999",
         // open: true,
         https: {
             cert: fs.readFileSync(path.join(__dirname, 'src/ssl/server.crt')),
@@ -60,6 +60,7 @@ module.exports = {
 
                 },
                 productName: "electron-demo",  //应用的名称
+                artifactName:'${productName}.${ext}'
             },
             // nodeIntegration: true,
         }

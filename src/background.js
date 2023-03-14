@@ -16,7 +16,7 @@ protocol.registerSchemesAsPrivileged([
   { scheme: 'app', privileges: { secure: true, standard: true } }
 ])
 const winURL = isDevelopment
-  ? `https://localhost:8888/`
+  ? `https://localhost:9999/`
   : 'app://./index.html'
 async function createWindow() {
   // Create the browser window.
